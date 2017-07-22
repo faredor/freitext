@@ -1,0 +1,300 @@
+/*
+Theme Name: Freitext
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Author: Zac Gordon
+Author URI: http://teamtreehouse.com/
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+body { 
+     padding-top: 60px; 
+     padding-bottom: 40px; 
+}
+
+ 
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: Droid;
+    src: url(fonts/DroidSerif-Regular.ttf);
+}
+
+@font-face {
+    font-family: Droid;
+    src: url(fonts/DroidSerif-Bold.ttf);
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: Droid;
+    src: url(fonts/DroidSerif-Italic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+    font-family: Droid;
+    src: url(fonts/DroidSerif-BoldItalic.ttf);
+	font-style: italic;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Rubik;
+    src: url(fonts/Rubik-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Rubik;
+    src: url(fonts/Rubik-Italic.ttf);
+	font-style: italic;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Rubik;
+    src: url(fonts/Rubik-Bold.ttf);
+	font-style: normal;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Rubik;
+    src: url(fonts/Rubik-BoldItalic.ttf);
+	font-style: italic;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: Rubik;
+    src: url(fonts/Rubik-Black.ttf);
+	font-style: normal;
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: Rubik;
+    src: url(fonts/Rubik-BlackItalic.ttf);
+	font-style: italic;
+	font-weight: bolder;
+}
+
+@font-face {
+	font-family: RubikMedium;
+    src: url(fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+	font-family: RubikMedium;
+    src: url(fonts/Rubik-MediumItalic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Rubik;
+    src: url(fonts/Rubik-Light.ttf);
+	font-style: normal;
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: Rubik;
+    src: url(fonts/Rubik-LightItalic.ttf);
+	font-style: italic;
+	font-weight: lighter;
+}
+
+/* ----- Font: Roboto ----- */
+
+@font-face {
+	font-family: Roboto;
+	src: url(fonts/RobotoCondensed-Regular.ttf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(fonts/RobotoCondensed-LightItalic.ttf);
+	font-weight: lighter;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(fonts/RobotoCondensed-Light.ttf);
+	font-weight: lighter;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(fonts/RobotoCondensed-Italic.ttf);
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(fonts/RobotoCondensed-BoldItalic.ttf);
+	font-weight: bold;	
+	font-style: italic;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(fonts/RobotoCondensed-Bold.ttf);
+	font-weight: bold;
+}
+
+html, body {
+	font-family: Rubik,Roboto,Montserrat;
+}
+
+
+/* ----- TYPOGRAPHY ----- */
+
+h1 {
+	font-size: 30px;
+}
+
+.comments-title, .comment-reply-title {
+	font-size: 22px;
+}
+
+nav {
+
+font-family: Montserrat;
+
+}
+
+.blogpost-single p {
+	font-family: Droid;
+	font-size: 16px;
+    -ms-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+	max-width: 100%;
+	text-align: justify;
+}
+
+h1.blog-title {
+	text-align: center;
+	font-size: 48px;
+}
+
+p.blog-title-meta {
+	text-align: center;
+	font-size: 22px;
+}
+
+p.blog-title-meta em {
+	font-style: normal;
+	color: #afafaf;
+}
+
+a.no-a-style {
+	color: #333;
+    text-decoration: none;
+}
+
+a:hover.no-a-style, a:focus.no-a-style {
+	color: black;
+    text-decoration: underline;
+}
+
+/* ----- ELEMENT-STYLES ----- */
+.navbar-default {
+    border-style: none;
+}
+
+.dropdown-menu {
+    border-style: none;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+	/*background-color: #CdCdFF;*/
+	color: black;
+	background-color: white;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+	color: black;
+	background-color: white;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+	color: black;
+	background-color: white;
+}
+
+.comment-list {
+	list-style: none;
+}
+
+.comment-meta {
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+li.comment {
+	margin-bottom: 15px;
+	margin-top: 10px;
+}
+
+.comment-form label {
+	display: block;
+}
+
+
+.gap-bottom {
+  margin-bottom: 10px; 
+}
+
+ol.box-teaser {
+	list-style-type: none;
+	padding: 0;
+	-webkit-padding-start: 0px;
+}
+
+.teaser-text {
+	text-align: center;
+}
+
+span {
+	display: block;
+}
+
+/* ----- NAVIGATION ----- */
+
+
+@media (min-width:768px) {
+
+	.dropdown:hover .dropdown-menu {
+		display: block;
+		margin-top: 0; // remove the gap so it doesn't close
+	}
+ 
+}

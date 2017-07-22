@@ -98,6 +98,7 @@ function update($new_instance, $old_instance) {
 	$count = 0;
 	$safecount = 0;
 	$n = 0;
+	//while loop makes sure that there is the right amount of postings with thumbnails
 	while ( ($count < $numberOfListings) AND ($safecount <= 30) ) {
 		$args = array( 'numberposts' => $numberOfListings+$n, 'category' => $category, 'post_status' => 'publish' );
 		$recent_posts = wp_get_recent_posts($args);

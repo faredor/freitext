@@ -13,8 +13,8 @@ if ( function_exists('register_sidebar') )
 	register_sidebar(array(
 		'before_widget' => '',
 		'after_widget' => '',
-		'before_title' => '<h3 class="widget-title">',
-		'after_title' => '</h3>',
+		'before_title' => '<h1 class="widget-title">',
+		'after_title' => '<hr></h1>',
 	));
 
 require_once('wp-bootstrap-navwalker.php');
@@ -146,18 +146,12 @@ function update($new_instance, $old_instance) {
 								echo get_the_date('d.m.Y', $recent['ID']);
 							echo '</span>';
 							echo '<span class="text-justify">';
-								echo '<a class="no-a-style" href="';
-									echo get_permalink($recent['ID']);
-									echo '" title="';
-									echo esc_attr($recent['post_title']);
-									echo ' ansehen">';
 									if (has_excerpt($recent['ID'])) {
 										echo get_the_excerpt($recent['ID']);
 									}
 									else {
 										echo wp_trim_words($recent['post_content'],25);
 									}
-								echo '</a>';
 							echo '</span>';
 						echo '</div>';
 					echo '</li>';

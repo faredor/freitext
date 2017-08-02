@@ -13,16 +13,21 @@ License URI: http://creativecommons.org/licenses/by-sa/3.0/
 This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
 */
 
+/*
+Font Red: #D1050C
+Font Grey: #565656
+Font Light-Black: #121212
+Font Black: #000000
+*/
 
-
-@import url('bootstrap/css/bootstrap.css'); 
-@import url('bootstrap/css/bootstrap-responsive.css'); 
-body { 
-     padding-top: 60px; 
-     padding-bottom: 40px; 
+@import url('bootstrap/css/bootstrap.css');
+@import url('bootstrap/css/bootstrap-responsive.css');
+body {
+     padding-top: 60px;
+     padding-bottom: 40px;
 }
 
- 
+
 @font-face {
     font-family: Montserrat;
     src: url(fonts/Montserrat-Regular.ttf);
@@ -154,7 +159,7 @@ body {
 @font-face {
 	font-family: Roboto;
 	src: url(fonts/RobotoCondensed-BoldItalic.ttf);
-	font-weight: bold;	
+	font-weight: bold;
 	font-style: italic;
 }
 
@@ -166,23 +171,40 @@ body {
 
 html, body {
 	font-family: Rubik,Roboto,Montserrat;
+  color: #000000;
 }
 
 
 /* ----- TYPOGRAPHY ----- */
 
 h1 {
-	font-size: 30px;
+	font-size: 27px;
+  color: #565656;
+}
+
+h2 {
+	font-size: 24px;
+  color: #565656;
+}
+
+h3 {
+	font-size: 21px;
+  color: #565656;
+}
+
+h4 {
+	font-size: 16px;
+  color: #565656;
 }
 
 .comments-title, .comment-reply-title {
-	font-size: 22px;
+	font-size: 20px;
 }
 
 nav {
-
-font-family: Montserrat;
-
+  font-family: Montserrat;
+  color: #D1050C;
+  font-size: 20px;
 }
 
 .blogpost-single p {
@@ -197,27 +219,34 @@ font-family: Montserrat;
 
 h1.blog-title {
 	text-align: center;
-	font-size: 48px;
+	font-size: 40px;
+  color: #121212;
 }
 
 p.blog-title-meta {
 	text-align: center;
 	font-size: 22px;
+  color: #565656;
 }
 
 p.blog-title-meta em {
 	font-style: normal;
-	color: #afafaf;
+	color: #565656;
 }
 
 a.no-a-style {
-	color: #333;
-    text-decoration: none;
+	color: #D1050C;
+  text-decoration: none;
 }
 
 a:hover.no-a-style, a:focus.no-a-style {
-	color: black;
-    text-decoration: underline;
+	color: #D1050C;
+  text-decoration: underline;
+}
+
+.widget-title {
+  color: #D1050C;
+  font-family: Montserrat;
 }
 
 /* ----- ELEMENT-STYLES ----- */
@@ -270,7 +299,7 @@ li.comment {
 
 
 .gap-bottom {
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 ol.box-teaser {
@@ -287,6 +316,17 @@ span {
 	display: block;
 }
 
+.widget-title {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.widget-title hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-style: dashed;
+}
+
 /* ----- NAVIGATION ----- */
 
 
@@ -296,5 +336,5 @@ span {
 		display: block;
 		margin-top: 0; // remove the gap so it doesn't close
 	}
- 
+
 }
